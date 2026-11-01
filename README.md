@@ -59,6 +59,10 @@ En **Sazón Compartida**, cada receta cuenta una historia. Publica tus platillos
 - **pip**
 - Opcional: **Docker Desktop** para ejecutar la aplicación con PostgreSQL
 
+### *⚡ Inicio rápido en Windows*
+
+Dentro de `aplicacion-system-recets`, haz doble clic en **`00_INICIAR.bat`** (el primer archivo de la carpeta, junto a `manage.py`): prepara todo, levanta el servidor y abre ***Chrome*** en `http://127.0.0.1:8000/`.
+
 ### *🪟 Windows · PowerShell*
 
 ***Desde la carpeta del proyecto:***
