@@ -1,19 +1,19 @@
-# 🥘 Sazón Compartida
+# *🥘 Sazón Compartida*
 
 ### *Una mesa, muchas historias y recetas para compartir.* 🌎
 
 **Sazón Compartida** es un recetario colaborativo bilingüe desarrollado con Django. Descubre platillos, comparte los tuyos, añade todos los ingredientes que necesites y ayuda a que cada receta cruce fronteras.
 
-> 🍋 *Proyecto 9: Aplicación Multilingüe de Recetas*
+> *🍋 *Proyecto 9: Aplicación Multilingüe de Recetas**
 > **Django · Español e inglés · Lista para configurar y desplegar**
 
 ---
 
-## ✨ Un recetario hecho entre todos
+## *✨ Un recetario hecho entre todos*
 
 En **Sazón Compartida**, cada receta cuenta una historia. Publica tus platillos, comparte instrucciones claras y descubre nuevas ideas de la comunidad.
 
-### 🍽️ ¿Qué puedes hacer?
+### *🍽️ ¿Qué puedes hacer?*
 
 - **Crear, editar y eliminar recetas** desde tu cuenta.
 - **Agregar tantos ingredientes como necesites**, con cantidad y unidad, gracias al formulario dinámico.
@@ -25,13 +25,13 @@ En **Sazón Compartida**, cada receta cuenta una historia. Publica tus platillos
 - **Cambiar el idioma de la interfaz** entre español e inglés.
 - **Administrar el recetario** desde el panel de Django.
 
-### 🌐 Un detalle importante sobre las traducciones
+### *🌐 Un detalle importante sobre las traducciones*
 
-Las traducciones las escriben las personas que crean y mantienen las recetas; la aplicación **no realiza traducciones automáticas**. Si un idioma todavía no está disponible, se muestra el contenido en el idioma original. Así las cantidades, los ingredientes y las instrucciones siguen siendo fieles a quien comparte la receta. 💚
+***Las traducciones las escriben las personas que crean y mantienen las recetas; la aplicación **no realiza traducciones automáticas**. Si un idioma todavía no está disponible, se muestra el contenido en el idioma original. Así las cantidades, los ingredientes y las instrucciones siguen siendo fieles a quien comparte la receta. 💚***
 
 ---
 
-## 🧰 Tecnologías
+## *🧰 Tecnologías*
 
 | Tecnología | Para qué se utiliza |
 |---|---|
@@ -43,25 +43,25 @@ Las traducciones las escriben las personas que crean y mantienen las recetas; la
 | **Docker y Docker Compose** | Entorno reproducible con PostgreSQL |
 | **Almacenamiento S3 compatible (opcional)** | Fotografías persistentes con AWS S3 o DigitalOcean Spaces |
 
-### 🧑‍🍳 Modelos del recetario
+### *🧑‍🍳 Modelos del recetario*
 
 `Recipe` · `RecipeTranslation` · `Ingredient` · `IngredientTranslation` · `RecipeIngredient` · `Category` · `Rating` · `User`
 
-La receta, los ingredientes y sus traducciones tienen datos propios. Así, cada persona puede valorar una receta una sola vez y actualizar su valoración sin duplicarla.
+***La receta, los ingredientes y sus traducciones tienen datos propios. Así, cada persona puede valorar una receta una sola vez y actualizar su valoración sin duplicarla.***
 
 ---
 
-## 🚀 Pon la cocina en marcha
+## *🚀 Pon la cocina en marcha*
 
-### Requisitos
+### *Requisitos*
 
-- **Python 3.12 o posterior**
+- **Python 3.12 o posterior** ***(O cualquier Host, Dominio o Base de Datos de su preferencia)***
 - **pip**
 - Opcional: **Docker Desktop** para ejecutar la aplicación con PostgreSQL
 
-### 🪟 Windows · PowerShell
+### *🪟 Windows · PowerShell*
 
-Desde la carpeta del proyecto:
+***Desde la carpeta del proyecto:***
 
 ```powershell
 cd aplicacion-system-recets
@@ -74,11 +74,11 @@ python manage.py createsuperuser
 python manage.py runserver
 ```
 
-Visita **<http://127.0.0.1:8000/>** y empieza a explorar. El comando `createsuperuser` crea la cuenta para entrar a **<http://127.0.0.1:8000/admin/>**.
+***Visita **<http://127.0.0.1:8000/>** y empieza a explorar. El comando `createsuperuser` crea la cuenta para entrar a **<http://127.0.0.1:8000/admin/>**.***
 
 > 💡 PowerShell puede bloquear la activación del entorno virtual por la política de ejecución de scripts. En ese caso, ejecuta `.\.venv\Scripts\python.exe -m pip install -r requirements.txt` y luego `.\.venv\Scripts\python.exe manage.py runserver`; no hace falta cambiar la política de seguridad de Windows.
 
-### 🍎 macOS y 🐧 Linux
+### *🍎 macOS y 🐧 Linux*
 
 ```bash
 cd aplicacion-system-recets
@@ -91,26 +91,26 @@ python manage.py createsuperuser
 python manage.py runserver
 ```
 
-### 🐳 ¿Prefieres Docker?
+### *🐳 ¿Prefieres Docker?*
 
-Primero copia `.env.example` a `.env` desde la carpeta de la aplicación. Después:
+***Primero copia `.env.example` a `.env` desde la carpeta de la aplicación. Después:***
 
 ```bash
 docker compose up --build
 ```
 
-También puedes usar PowerShell:
+***También puedes usar PowerShell:***
 
 ```powershell
 Copy-Item .env.example .env
 docker compose up --build
 ```
 
-La aplicación queda en **<http://localhost:8000/>**. Docker Compose inicia PostgreSQL, espera a que esté disponible y aplica las migraciones antes de iniciar el servidor web. Las recetas de la base de datos se conservan en el volumen de Docker.
+***La aplicación queda en **<http://localhost:8000/>**. Docker Compose inicia PostgreSQL, espera a que esté disponible y aplica las migraciones antes de iniciar el servidor web. Las recetas de la base de datos se conservan en el volumen de Docker.***
 
 ---
 
-## ⚙️ Configuración
+## *⚙️ Configuración*
 
 La carpeta `aplicacion-system-recets` contiene [`.env.example`](./aplicacion-system-recets/.env.example), una plantilla con las variables de configuración. **Cópiala a `.env` para comenzar y no subas `.env` ni secretos reales al repositorio.**
 
@@ -132,9 +132,9 @@ Las fotos se guardan localmente en desarrollo. En producción, un almacenamiento
 
 ---
 
-## ☁️ Lista para configurar el despliegue
+## *☁️ Lista para configurar el despliegue*
 
-El proyecto incluye un **Dockerfile de producción**, Gunicorn, WhiteNoise y PostgreSQL. Se puede desplegar en **DigitalOcean App Platform** u otro proveedor compatible con contenedores.
+***El proyecto incluye un **Dockerfile de producción**, Gunicorn, WhiteNoise y PostgreSQL. Se puede desplegar en **DigitalOcean App Platform** u otro proveedor compatible con contenedores.***
 
 1. **Crea una base de datos PostgreSQL** y ten a mano su URL de conexión.
 2. **Publica la carpeta `aplicacion-system-recets`** como aplicación Docker.
@@ -147,13 +147,13 @@ El proyecto incluye un **Dockerfile de producción**, Gunicorn, WhiteNoise y Pos
    python manage.py createsuperuser
    ```
 
-Las migraciones se ejecutan al iniciar el contenedor. **El repositorio contiene el código y la configuración, no la base de datos, el dominio ni las credenciales del servicio de publicación**: esos recursos se crean y configuran en la cuenta del proveedor.
+***Las migraciones se ejecutan al iniciar el contenedor. **El repositorio contiene el código y la configuración, no la base de datos, el dominio ni las credenciales del servicio de publicación**: esos recursos se crean y configuran en la cuenta del proveedor.***
 
 ---
 
-## ✅ Comprobaciones
+## *✅ Comprobaciones*
 
-Ejecuta estos comandos desde `aplicacion-system-recets`:
+***Ejecuta estos comandos desde `aplicacion-system-recets`:***
 
 ```bash
 python manage.py test
@@ -165,9 +165,9 @@ python manage.py check --deploy
 
 ---
 
-## 🗂️ ¿Qué contiene el repositorio?
+## *🗂️ ¿Qué contiene el repositorio?*
 
-La raíz del proyecto se mantiene sencilla y ordenada:
+***La raíz del proyecto se mantiene sencilla y ordenada:***
 
 ```text
 Proyecto AMR (Tarea)/
@@ -176,16 +176,16 @@ Proyecto AMR (Tarea)/
 └── LICENSE                    # Licencia MIT
 ```
 
-Dentro de la carpeta de la aplicación encontrarás `recetas/`, `recetario/`, `templates/`, `static/`, las pruebas, las migraciones y los archivos para ejecutar y desplegar el proyecto.
+***Dentro de la carpeta de la aplicación encontrarás `recetas/`, `recetario/`, `templates/`, `static/`, las pruebas, las migraciones y los archivos para ejecutar y desplegar el proyecto.***
 
 ---
 
-## 📄 Licencia
+## *📄 Licencia*
 
-Este proyecto se distribuye bajo la **licencia MIT**. Consulta [`LICENSE`](./LICENSE) para leer sus términos.
+***Este proyecto se distribuye bajo la **licencia MIT**. Consulta [`LICENSE`](./LICENSE) para leer sus términos.***
 
 ---
 
-### 💚 *Gracias por compartir tu receta.*
+### *💚 *Gracias por compartir tu receta.**
 
 **Una buena comida reúne a todos. ¡Buen provecho!** 🍽️🌿
