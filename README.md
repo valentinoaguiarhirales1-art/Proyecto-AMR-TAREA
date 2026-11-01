@@ -55,7 +55,7 @@ En **Sazón Compartida**, cada receta cuenta una historia. Publica tus platillos
 
 ### *Requisitos*
 
-- **Python 3.12 o posterior** ***(O cualquier Host, Dominio o Base de Datos de su preferencia)***
+- **Python 3.12 o posterior**
 - **pip**
 - Opcional: **Docker Desktop** para ejecutar la aplicación con PostgreSQL
 
